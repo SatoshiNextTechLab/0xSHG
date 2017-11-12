@@ -227,7 +227,7 @@ contract driver {
 
   modifier least_amount_loan() {
 
-    if(sum < (0.25)this.balance){
+    if(sum < (0.25)*this.balance){
       throw;
     }
     else{
