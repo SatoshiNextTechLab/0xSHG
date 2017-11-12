@@ -12,6 +12,7 @@ contract driver {
 
 
 
+
   struct member {
 
 
@@ -46,7 +47,9 @@ contract driver {
 
   address var4;
 
-
+event SomeoneTriedToAddSomeone(address personWhoTried,address personWhoWasAdded);
+event SomeoneAddedMoneyToThePool(address personWhoSent,uint moneyHeSent);
+event SomeoneRequestedForMoney(address personWhoRequested,uint requestedM);
 
   modifier onlynew(address newadd){
 
@@ -110,7 +113,7 @@ contract driver {
 
     count++;
 
-
+    SomeoneTriedToAddSomeone(msg.sender,_req_member);
 
   }
 
@@ -150,7 +153,7 @@ contract driver {
 
 
 
-  function getMyMoney() constant returns (uint){
+  function getPoolMoney() constant returns (uint){
 
 
 
@@ -165,6 +168,8 @@ contract driver {
   function pool(uint __amount) payable {
 
     this.transfer(__amount);
+    
+    SomeoneAddedMoneyToThePool(msg.sender,__amount);
 
   }
 
@@ -217,7 +222,7 @@ contract driver {
    amount_map[_amount_] = msg.sender;
     
 
-
+   SomeoneRequestedForMoney(msg.sender,_amount_);
   }
 
 
@@ -270,7 +275,7 @@ contract driver {
 
 
 
-  function assign_loan() constant returns (uint){
+  function assign_loan_amount_from_pool() constant returns (uint){
 
 
 
@@ -304,7 +309,7 @@ contract driver {
 
 
 
-  function display() constant returns(address[]){
+  function displayAllowedForLoan() constant returns(address[]){
 
     uint length = amounts.length;
 
