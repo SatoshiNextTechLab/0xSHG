@@ -225,7 +225,18 @@ contract driver {
 
   address temp_address;
 
-  function pay_loan() {
+  modifier least_amount_loan() {
+
+    if(sum < (0.25)this.balance){
+      throw;
+    }
+    else{
+      _;
+    }
+
+  }
+
+  function pay_loan() least_amount_loan() {
 
     for(uint w=0; w < counter_sum; w++ ){
 
@@ -243,7 +254,6 @@ contract driver {
   }
 
   function () payable{
-
   }
 
 }
