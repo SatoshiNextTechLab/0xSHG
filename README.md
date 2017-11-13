@@ -49,6 +49,36 @@ A new member on the network can only be added once his Aadhar identity been phys
 | git diff | Show file differences that haven't been staged |                                                                           
 
 
-> System Architecture
+
+## Architecture and Tech-stack
 
 ![System Architecture](https://raw.githubusercontent.com/jangidkrishna/0xSHG/master/architecture.jpg)
+
+
+### Architecture Modules
+##### 1. Validation
+Initial members of the network call add_member to add a new person to the network, once they've validated his identity using Aadhar.
+##### 2. Deposit Money
+The newly added member must deposit money to the pool to be able to request a loan.
+##### 3. Request Loan
+A person can request a loan if 
+  1. He has been validated by 4 existing members
+  2. He has deposited some amount of money
+##### 4. Receive Loan
+All loan request are sorted in increasing order of loan-request amount. Every three months, the money in pool is used to fullfill the maximum number of loan-requests. Any reserve wealth in the pool is re-distributed back to the network. The is the function of pay_loan.
+
+### Tech Stack
+1. Ethereum smart constracts (in solidity)
+2. Ropsten testnet  
+3. Truffle framework
+4. MetaMask
+5. Remix IDE
+6. Web3.js
+7. Aadhar_validator.js
+
+
+
+Steps to compile in Truffle
+
+
+
