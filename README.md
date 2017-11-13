@@ -26,7 +26,7 @@ Using these elements, we can create an Aadhar-linked digital pan-Indian SHG netw
 | Lack of organisational leadership | Auto-governance by solidity smart contract |                                                      | Risk of non-repayment of loans is high | Risk is mitigated by introducing peer-pressure on the blockchain |
 | Possibility of corruption inside group | All transactions are open and transparent |
 | [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | Intuitive web-interface for all transactions |
-|  | List all new or modified files |
+| Women mightn't be able to attend SHG meetings | Anonymity on the network ensures equality for all|
 
 ### Scheme
 Every 3 months, all loan-requests in the network are collected and the maximum possible loan requests are fulfilled.
