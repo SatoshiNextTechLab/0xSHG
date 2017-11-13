@@ -25,8 +25,8 @@ Using these elements, we can create an Aadhar-linked digital pan-Indian SHG netw
 | Patchy maintenance of accounts | Automatic maintenance of fault-tolerant, decentralized ledger |
 | Lack of organisational leadership | Auto-governance by solidity smart contract |                                                      | Risk of non-repayment of loans is high | Risk is mitigated by introducing peer-pressure on the blockchain |
 | Possibility of corruption inside group | All transactions are open and transparent |
-| [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | List all new or modified files |
-| Patchy maintenance of accounts | List all new or modified files |
+| [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | Intuitive web-interface for all transactions |
+|  | List all new or modified files |
 
 ### Scheme
 Every 3 months, all loan-requests in the network are collected and the maximum possible loan requests are fulfilled.
@@ -35,6 +35,9 @@ Every person who receives a loan has 3 months (until next bidding) to pay back h
 #### Peer Pressure on the blockchain
 Solidarity lending (peer pressure and mutual accountability to repaying loans) is an building block of rural microfinance. But in a pan-India digital network, this peer-pressure would be minimised. We achieve peer-pressure on a peer-to-peer network by using a novel innovative accountability solution, as described below.
 A new member on the network can only be added once his Aadhar identity been physically validated by 4 pre-existing nodes on the network. If the person defaults, the four people responsibility for him are required to split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary solidarity lending groups.
+
+### Zero-Interest loans
+This is made possible by removing traditional banks from the equation. The group pools money internally and acts as a seed-funding co-operative, every three months. The main benefactors of this scheme are women, since 94% SHG members have been found to be women.
 
 
 ## Architecture and Tech-stack
