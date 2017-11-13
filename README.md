@@ -50,4 +50,4 @@ A new member on the network can only be added once his Aadhar identity been phys
 
 > System Architecture
 
-![System Architecture](https://raw.githubusercontent.com/MayankR/OpenEdAI-Hackathon/master/images/flowchart.png)
+![System Architecture](https://raw.githubusercontent.com/jangidkrishna/0xSHG/master/architecture.jpg)
