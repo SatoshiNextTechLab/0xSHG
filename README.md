@@ -42,12 +42,10 @@ A new member on the network can only be added once his Aadhar identity been phys
 
 
 > How App works?
-| Problems with rural micro-finance institutions           | How our projects solves them                                                             |
-|----------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Need an authority or head for solidarity spending groups | Automatic and self-governing using 'code as law' smart contracts                         |
-| 1 in 10 people default on re-payment of loans            | Lowering risk of losing money from system by introducing peer-pressure on the blockchain |
-|                                                          |                                                                                          |
-|                                                          |                                                                                          |
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |                                                                           
 
 
 > System Architecture
