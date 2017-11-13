@@ -1,9 +1,14 @@
 pragma solidity ^0.4.0;
 
 contract driver {
-
+uint TimeStart;
   function driver() public payable {
+      TimeStart=now;
+
   }
+
+
+  mapping(uint=>address)usr_aadhar;
 
   struct member {
 
@@ -11,6 +16,7 @@ contract driver {
     uint counter;
 
     address member_address;
+    uint aadhaar;
 
     address ref_1;
     address ref_2;
@@ -54,10 +60,10 @@ contract driver {
 
   uint init_member_counter = 1;
 
-  function init_members() {
-
+  function init_members(uint _aadhaar) {
+usr_aadhar[_aadhaar]=msg.sender;
     if(init_member_counter <5){
-      link[msg.sender]=member(now,4,msg.sender,0x1,0x2,0x3,0x4);
+      link[msg.sender]=member(now,4,msg.sender,_aadhaar,0x1,0x2,0x3,0x4);
       init_member_counter++;
     }
     else{
@@ -66,30 +72,27 @@ contract driver {
 
   }
 
-  function add_Member(address _req_member) check_eligibility_of_payments(msg.sender) {
+  function add_Member(address _req_member,uint __aadhaar) check_eligibility_of_payments(msg.sender) {
 
     onlynew(_req_member);
 
     if(count==1)
-    {
+    {usr_aadhar[__aadhaar]=_req_member;
       var1=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,0,0,0);
+      link[_req_member]=member(now,count,_req_member,__aadhaar,var1,0,0,0);
     }
     else if (count==2)
     {
-      var2=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,0,0);
+      link[_req_member].ref_2=msg.sender;
     }
     else if (count==3)
     {
-      var3=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,var3,0);
+      link[_req_member].ref_3=msg.sender;
     }
 
     else if (count==4)
     {
-      var4=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,var3,var4);
+      link[_req_member].ref_4=msg.sender;
     }
 
     count++;
@@ -98,9 +101,9 @@ contract driver {
 
   }
 
-  function list_refrences(address _master_address) constant returns (address _ref1,address _ref2,address _ref3,address _ref4) {
+  function list_refrences(address _master_address) constant returns (uint,uint,uint,uint) {
 
-    return (link[_master_address].ref_1,link[_master_address].ref_2,link[_master_address].ref_3,link[_master_address].ref_4);
+    return (link[link[_master_address].ref_1].aadhaar,link[link[_master_address].ref_2].aadhaar,link[link[_master_address].ref_3].aadhaar,link[link[_master_address].ref_4].aadhaar);
 
   }
 
@@ -153,7 +156,7 @@ contract driver {
       }
   }
 
-  function req_Money(uint _amount_) onlyafter6 onlymember {
+  function req_Money(uint _amount_) onlymember {
 
     amounts.push(_amount_);
     amount_map[_amount_] = msg.sender;
@@ -184,13 +187,13 @@ contract driver {
 
   uint t;
 
-  uint counter_sum=1;
+  uint counter_sum=0;
 
   function assign_loan_amount_from_pool() constant returns (uint){
 
     sum = 0;
 
-   for(t=0;t<amounts.length-1;t++){
+   for(t=0;t<amounts.length;t++){
 
     if(sum<=amounts[t]){
 
@@ -225,20 +228,23 @@ contract driver {
 
   address temp_address;
 
-  modifier least_amount_loan() {
+  modifier every_3_months {
 
-    if(sum < (this.balance)/4){
-      throw;
+    uint months=(now-TimeStart)/(24*60*60*30);
+    if(months%3==0)
+    {
+        _;
     }
-    else{
-      _;
+    else
+    {
+        throw;
     }
 
   }
 
-  function pay_loan() least_amount_loan() {
+  function pay_loan() every_3_months {
 
-    for(uint w=0; w < counter_sum; w++ ){
+    for(uint w=0; w <= counter_sum; w++ ){
 
       temp_address = amount_map[amounts[w]];
       temp_address.transfer(amounts[w]);
