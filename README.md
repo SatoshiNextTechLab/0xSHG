@@ -22,6 +22,7 @@ We propose a simple model, where villagers all across India can pool their resou
 
 Using these elements, we can create an Aadhar-linked digital pan-Indian SHG network. In this network, MAXIMUM POSSIBLE microloan requests are fully funded with 0% interest (least request satisfied first) and the reserve wealth is re-distributed into the system. People can exit the network by requesting their deposited money, which they’ll receive in the next bidding when the loans are repayed.
 
+<img src="https://raw.githubusercontent.com/jangidkrishna/0-loan_dapp/master/gui.png">
 
 #### Scheme
 Every 3 months, all loan-requests in the network are collected and the maximum possible loan requests are fulfilled.
@@ -37,22 +38,16 @@ Solidarity lending (peer pressure and mutual accountability to repaying loans) i
 A new member on the network can only be added once his Aadhar identity been physically validated by 4 pre-existing nodes on the network. If the person defaults, the four people responsibility for him are required to split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary solidarity lending groups.
 
 
-####Impact to Society of Solution:
+#### Impact to Society of Solution:
 
-
-
-Many a times, people read for long hours and yet gain little apart from false feeling of gratitude.
-* Have you ever felt that you were too dizzy while reading a chapter only to later realize that haven’t actually understood the crux of it?
-* Have you enjoyed easily getting away with reading assignments?
-* Have you encountered a question right from the text and yet haven’t been able to answer it?
-
-If your answer to any one or more of the above questions was yes, then you are in dire need of our app! With this simple mobile application we aim to revolutionize the education sector by providing immense help in improving one’s reading habits
-With the advent of the social age, attention spans of individuals have significantly gone down. It has been observed that when people try to read for long hours, they seldom are able to grasp concepts. But having spent some time reading gives them a false sense of understanding it.
-Our application (ReadEx) tackles this problem at its core, while also providing a one stop solution for all reading hardships an avid reader has always dreamt of. Move on to project description to know more.
 
 > How App works?
-<img src="https://raw.githubusercontent.com/jangidkrishna/0-loan_dapp/master/gui.png">
-
+| Problems with rural micro-finance institutions           | How our projects solves them                                                             |
+|----------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Need an authority or head for solidarity spending groups | Automatic and self-governing using 'code as law' smart contracts                         |
+| 1 in 10 people default on re-payment of loans            | Lowering risk of losing money from system by introducing peer-pressure on the blockchain |
+|                                                          |                                                                                          |
+|                                                          |                                                                                          |
 
 
 > System Architecture
