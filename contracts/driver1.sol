@@ -1,15 +1,17 @@
 pragma solidity ^0.4.0;
 
 contract driver {
-uint TimeStart;
+  uint TimeStart; //time stamp of the block
+  //constructor
   function driver() public payable {
       TimeStart=now;
 
   }
 
-
+  //links aadhar to address
   mapping(uint=>address)usr_aadhar;
 
+  //structure of member
   struct member {
 
     uint addtime;
@@ -17,7 +19,7 @@ uint TimeStart;
 
     address member_address;
     uint aadhaar;
-
+    //for refrences of the member
     address ref_1;
     address ref_2;
     address ref_3;
@@ -25,6 +27,7 @@ uint TimeStart;
 
   }
 
+  //maps address to the member structure
   mapping (address => member) link;
 
   uint count=1;
@@ -34,10 +37,14 @@ uint TimeStart;
   address var3;
   address var4;
 
-    event SomeoneTriedToAddSomeone(address personWhoTried,address personWhoWasAdded);
-    event SomeoneAddedMoneyToThePool(address personWhoSent,uint moneyHeSent);
-    event SomeoneRequestedForMoney(address personWhoRequested,uint requestedM);
+  //trigered when member is added
+  event SomeoneTriedToAddSomeone(address personWhoTried,address personWhoWasAdded);
+  //trigered when money is deposited
+  event SomeoneAddedMoneyToThePool(address personWhoSent,uint moneyHeSent);
+  //trigered when requested for loan
+  event SomeoneRequestedForMoney(address personWhoRequested,uint requestedM);
 
+  //resets counter for new member
   function onlynew(address newadd){
 
       if(link[newadd].ref_1==0x0)
@@ -47,6 +54,7 @@ uint TimeStart;
 
   uint currtime;
 
+  //check eligibility of member for payments
   modifier check_eligibility_of_payments(address _check_address) {
 
     if(link[_check_address].counter < 4){
@@ -60,8 +68,9 @@ uint TimeStart;
 
   uint init_member_counter = 1;
 
+  //assigns initial members
   function init_members(uint _aadhaar) {
-usr_aadhar[_aadhaar]=msg.sender;
+    usr_aadhar[_aadhaar]=msg.sender;
     if(init_member_counter <5){
       link[msg.sender]=member(now,4,msg.sender,_aadhaar,0x1,0x2,0x3,0x4);
       init_member_counter++;
@@ -72,6 +81,7 @@ usr_aadhar[_aadhaar]=msg.sender;
 
   }
 
+  //validates new member by refrences
   function add_Member(address _req_member,uint __aadhaar) check_eligibility_of_payments(msg.sender) {
 
     onlynew(_req_member);
@@ -101,18 +111,21 @@ usr_aadhar[_aadhaar]=msg.sender;
 
   }
 
+  //show aadhar refrences of a member
   function list_refrences(address _master_address) constant returns (uint,uint,uint,uint) {
 
     return (link[link[_master_address].ref_1].aadhaar,link[link[_master_address].ref_2].aadhaar,link[link[_master_address].ref_3].aadhaar,link[link[_master_address].ref_4].aadhaar);
 
   }
 
+  //shows the money in the pool
   function getPoolMoney() constant returns (uint){
 
     return this.balance;
 
   }
 
+  //deposit money in the pool
   function pool(uint __amount) payable {
 
     this.transfer(__amount);
@@ -121,7 +134,7 @@ usr_aadhar[_aadhaar]=msg.sender;
   }
 
   uint[] public amounts;
-
+//requested money mapped to member address
   mapping (uint => address) amount_map;
 
   modifier onlyafter6()
@@ -143,6 +156,8 @@ usr_aadhar[_aadhaar]=msg.sender;
       }
 
   }
+
+  //Checks if the member is valid
   modifier onlymember()
   {
       uint memcount=link[msg.sender].counter;
@@ -155,7 +170,7 @@ usr_aadhar[_aadhaar]=msg.sender;
           throw;
       }
   }
-
+//To request money from the pool
   function req_Money(uint _amount_) onlymember {
 
     amounts.push(_amount_);
@@ -188,7 +203,7 @@ usr_aadhar[_aadhaar]=msg.sender;
   uint t;
 
   uint counter_sum=0;
-
+//Total distributable money from the pool
   function assign_loan_amount_from_pool() constant returns (uint){
 
     sum = 0;
@@ -211,7 +226,7 @@ usr_aadhar[_aadhaar]=msg.sender;
   {
       return(link[ad1].addtime);
   }
-
+//Address of members who will receive loan
   function displayAllowedForLoan() constant returns(address[]){
 
     uint length = amounts.length;
@@ -227,7 +242,7 @@ usr_aadhar[_aadhaar]=msg.sender;
   }
 
   address temp_address;
-
+//Check if the month is end of three months cycle
   modifier every_3_months {
 
     uint months=(now-TimeStart)/(24*60*60*30);
@@ -241,7 +256,7 @@ usr_aadhar[_aadhaar]=msg.sender;
     }
 
   }
-
+//Pay the members the requested loan amount
   function pay_loan() every_3_months {
 
     for(uint w=0; w <= counter_sum; w++ ){
@@ -263,3 +278,4 @@ usr_aadhar[_aadhaar]=msg.sender;
   }
 
 }
+
