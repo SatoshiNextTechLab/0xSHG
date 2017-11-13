@@ -1,5 +1,5 @@
 # Proffer Network Hackathon
-This repository contains the source code for the rural microfinance project and the corresponding web interface.
+This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
 ## 0xSHG (Zero interest loans for rural microfinance)
 
 Rural microfinance problems aren't just financial, but also.
@@ -38,16 +38,16 @@ Solidarity lending (peer pressure and mutual accountability to repaying loans) i
 A new member on the network can only be added once his Aadhar identity been physically validated by 4 pre-existing nodes on the network. If the person defaults, the four people responsibility for him are required to split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary solidarity lending groups.
 
 
-#### Impact to Society of Solution:
+## Impact to Society of Solution:
 
-
-> How App works?
-
-| Command | Description |
+| Problems in rural microfinance | How our project solves them |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |                                                                           
-
+| Patchy maintenance of accounts | List all new or modified files |
+| Lack of organisational leadership | Show file differences that haven't been staged |                                                    | Defaulter risk is high | Risk is mitigated by peer-pressure on the blockchain |
+| Patchy maintenance of accounts | List all new or modified files |
+| Patchy maintenance of accounts | List all new or modified files |
+| Patchy maintenance of accounts | List all new or modified files |
+                
 
 
 ## Architecture and Tech-stack
@@ -80,5 +80,8 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 
 Steps to compile in Truffle
 
-
+Steps to compile GUI
+1. clone repo ()
+2. npm install .
+3. gulp serve
 
