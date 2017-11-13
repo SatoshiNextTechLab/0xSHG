@@ -84,3 +84,9 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 
 ## Who does it benefit
 The major benefactor of this solution are the daily wage earners and the small scale business owners who have potential to succed but lack the collateral for applying for bank loans and can't afford to pay high interest rates. This solution provides them oppurtunity to take flat interest loans without any collateral while still making sure they are compelled(peer pressure) to return the amount.
+
+
+## Flaws in the network
+1.Adpotion : initial adoption of the system might be slow due to technical illiteracy , whereas E-Shakti is an example wherein the technological adoption was surprisingly fast and similar outcome is possible in case of 0xSHG.
+2.Difference in unit of currency : The solution model requires ether/wei as the basic unit of currency.Hence , an intermediatory like exchange is required so that the model is compatitable.
+3.Leftover reserve in pool : After the distribution ,there is a possibility that some amount of pool money is left over.This stays static for the next 2 months after which again the distribution takes place.The problem can be mitigated by redistribution among the peers after the loan distribution.
