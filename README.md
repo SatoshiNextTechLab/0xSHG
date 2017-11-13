@@ -2,7 +2,7 @@
 This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
 
 1. Link to video: <br>
-2. [Link to contract deployed on Ropsten testnet:](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62) <br>
+2. [Link to contract deployed on Ropsten testnet](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62) <br>
 3. Contract address: 0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef
 
 ## 0xSHG (Zero interest loans for rural microfinance)
@@ -22,10 +22,10 @@ Using these elements, we can create an Aadhar-linked digital pan-Indian SHG netw
 
 | Problems in rural microfinance | How our project solves them |
 | --- | --- |
-| Patchy maintenance of accounts | List all new or modified files |
-| Lack of organisational leadership | Show file differences that haven't been staged |                                                    | Defaulter risk is high | Risk is mitigated by peer-pressure on the blockchain |
-| Patchy maintenance of accounts | List all new or modified files |
-| Patchy maintenance of accounts | List all new or modified files |
+| Patchy maintenance of accounts | Automatic maintenance of fault-tolerant, decentralized ledger |
+| Lack of organisational leadership | Auto-governance by solidity smart contract |                                                      | Risk of non-repayment of loans is high | Risk is mitigated by introducing peer-pressure on the blockchain |
+| Possibility of corruption inside group | All transactions are open and transparent |
+| [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | List all new or modified files |
 | Patchy maintenance of accounts | List all new or modified files |
 
 ### Scheme
