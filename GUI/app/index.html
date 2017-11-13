@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>0xSHG | Micro-Finance </title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+      <header><center><a href='http://niti.gov.in/'><img src='images/nitilogo.png'></img></a></center></header>
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="hero-unit">
+        <h1><center>0xSHG</center></h1>
+        <h2><center>Zero Interest Micro-Loans for <br>Self-Help Groups</center></h2> 
+    <div class="block1">
+          <h4><center>Add Init Members</center></h4>
+          <span><center>Aadhar ID : <input type='text' id='Uaadh' value=''></center></span>
+          <span><center><button id ='addInit' onclick='AddInit()'>Add Init Member</button></center></span>
+          
+    </div>
+    <div class="block2">
+          <h4><center>Member Validation</center></h4>
+          <span><center>Aadhar ID : <input type='text' id='Uaadh' value=''></center></span>
+          <span><center>User Address : <input type='text' id='Uaddr' value='0x00'></center></span>
+          <span><center><button id ='adval' onclick='aadhvalidation()'>Validate Member</button></center></span>
+    </div>  
+    <div class="block3">
+          <h4><center>Deposit to Pool</center></h4>
+          <span><center>Deposition Amount : <input type='text' id='poolDep' value=''></center></span>
+          <span><center><button id ='depol' onclick='PolDep()'>Deposit</button></center></span>
+    </div>
+    <div class="block2">
+          <h4><center>Request Loan</center></h4>
+          <span><center>Amount Requested : <input type='text' id='AmtReq' value=''></center></span>
+          <span><center><button id ='lonreq' onclick='LoanReq()'>Request Loan</button></center></span>
+    </div> 
+          
+    </div>
+    <span class='gre1'>
+        Connection Status :</span><br>
+     <span class='gre' id='constat'></span>
+    
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/aadhar.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
