@@ -207,7 +207,7 @@ contract driver {
       return(link[ad1].addtime);
   }
 
-  function displayAllowedForLoan() constant returns(address[]){
+  function displayAllowedForLoan() payable returns(address[]){
 
     uint length = amounts.length;
     address[] memory addr = new address[](length);
