@@ -2,7 +2,7 @@
 This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
 
 Link to video: 
-Link to contract deployed on Ropsten testnet: https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62
+[Link to contract deployed on Ropsten testnet:](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62)
 Contract address: 0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef
 
 ## 0xSHG (Zero interest loans for rural microfinance)
@@ -11,27 +11,12 @@ Microfinance institutions are essential to economic sustenance of rural finance 
 ### What are SHGs?
 Self-help groups are rural microfinance intiatives where multiple villagers pool money together to apply for collateral-free flat-interest rate bank loans. This is possible because mutual accountability in the group  [minimizes risk of non-repayment of loans](https://en.wikipedia.org/wiki/Solidarity_lending).
 
-
 ### What we built?
 We propose a simple model, where villagers all across India can pool their resources and receive *interest-free microloans* from the network. Blockchain technology enables micro-transactions (which allows for a greater inclusion for poverty-stricken individuals), automatic bookkeeping (no delay or pathy maintenance of ledgers on-chain) in a transparent (all chain transactions are open) manner. We remove the need for a managing authority for the group (decentralized smart contract). By needing consent from previous members to enter the network and making them accountable for him, we introduce peer pressure into the network. This lowers chances of non-repayment of loans.
 
 Using these elements, we can create an Aadhar-linked digital pan-Indian SHG network. In this network, MAXIMUM POSSIBLE microloan requests are fully funded with 0% interest (least request satisfied first) and the reserve wealth is re-distributed into the system. People can exit the network by requesting their deposited money, which they’ll receive in the next bidding when the loans are repayed.
 
 <img src="https://raw.githubusercontent.com/jangidkrishna/0-loan_dapp/master/gui.png">
-
-#### Scheme
-Every 3 months, all loan-requests in the network are collected and the maximum possible loan requests are fulfilled.
-Every person who receives a loan has 3 months (until next bidding) to pay back his loan. Failure to do so will mean 4 people accountable for that person will have to bear the loan.
-
-#### Three steps to zero-interest loans:
-1. Get validated
-2. Deposit money
-3. Request microloan
-
-#### Peer Pressure on the blockchain
-Solidarity lending (peer pressure and mutual accountability to repaying loans) is an building block of rural microfinance. But in a pan-India digital network, this peer-pressure would be minimised. We achieve peer-pressure on a peer-to-peer network by using a novel innovative accountability solution, as described below.
-A new member on the network can only be added once his Aadhar identity been physically validated by 4 pre-existing nodes on the network. If the person defaults, the four people responsibility for him are required to split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary solidarity lending groups.
-
 
 ## Impact to Society of Solution:
 
@@ -42,7 +27,14 @@ A new member on the network can only be added once his Aadhar identity been phys
 | Patchy maintenance of accounts | List all new or modified files |
 | Patchy maintenance of accounts | List all new or modified files |
 | Patchy maintenance of accounts | List all new or modified files |
-                
+
+### Scheme
+Every 3 months, all loan-requests in the network are collected and the maximum possible loan requests are fulfilled.
+Every person who receives a loan has 3 months (until next bidding) to pay back his loan. Failure to do so will mean 4 members accountable for that person will bear the loan, thus creating an incentive for the four members to keep the person accountable.
+
+#### Peer Pressure on the blockchain
+Solidarity lending (peer pressure and mutual accountability to repaying loans) is an building block of rural microfinance. But in a pan-India digital network, this peer-pressure would be minimised. We achieve peer-pressure on a peer-to-peer network by using a novel innovative accountability solution, as described below.
+A new member on the network can only be added once his Aadhar identity been physically validated by 4 pre-existing nodes on the network. If the person defaults, the four people responsibility for him are required to split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary solidarity lending groups.
 
 
 ## Architecture and Tech-stack
@@ -72,10 +64,17 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 7. Aadhar_validator.js
 
 
-Steps to compile in Truffle
+##### Steps to compile in Truffle
+1. git clone https://github.com/jangidkrishna/0xSHG.git
+2. truffle compile
+3. truffle migrate
+4. truffle console
+5. Interact using Web3.js
 
-Steps to compile GUI
-1. clone repo ()
+
+##### Steps to compile GUI
+1. clone repo https://github.com/jangidkrishna/0xSHG.git
+2. cd into 0xSHG-master/GUI
 2. npm install .
 3. gulp serve
 
