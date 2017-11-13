@@ -1,7 +1,7 @@
 # Proffer Network Hackathon
 This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
 
-1. Link to video: <br>
+1. Link to video: https://www.youtube.com/watch?v=55RoBoMfOVo&feature=youtu.be<br>
 2. [Link to contract deployed on Ropsten testnet](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62) <br>
 3. Contract address: 0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef
 
