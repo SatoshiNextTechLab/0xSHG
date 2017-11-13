@@ -81,3 +81,6 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 2. npm install .
 3. gulp serve
 
+
+## Who does it benefit
+The major benefactor of this solution are the daily wage earners and the small scale business owners who have potential to succed but lack the collateral for applying for bank loans and can't afford to pay high interest rates. This solution provides them oppurtunity to take flat interest loans without any collateral while still making sure they are compelled(peer pressure) to return the amount.
