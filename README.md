@@ -1,24 +1,19 @@
 # Proffer Network Hackathon
 This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
+
+Link to video: 
+Link to contract deployed on Ropsten testnet: https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62
+Contract address: 0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef
+
 ## 0xSHG (Zero interest loans for rural microfinance)
-
-Rural microfinance problems aren't just financial, but also.
-
-
-> How it will help me?
-table of problems in MFI vs how we solve them
-
-Microfinance institutions are essential to economic sustenance of rural finance and small businesses. Initiatives like Self Help Groups (SHGs) depend on the fact that when villagers pool money, peer-pressure reduces defaulter risk, get loans from banks with flat interest rates.
+Microfinance institutions are essential to economic sustenance of rural finance and small businesses. Initiatives like Self Help Groups (SHGs) have been transformational to [changing lives of rural populations (which are 97% women)](http://www.iosrjournals.org/iosr-jhss/papers/Vol7-issue1/I0714248.pdf?id=5966) depend on the fact that when villagers pool money, mutual accountability & peer pressure reduces risk of non-repayment of loans, get loans from banks with flat interest rates.
 
 ### What are SHGs?
-(highlight peer pressure)
-Self-help groups 
-
-### Who this will impact and how much?
+Self-help groups are rural microfinance intiatives where multiple villagers pool money together to apply for collateral-free flat-interest rate bank loans. This is possible because mutual accountability in the group  [minimizes risk of non-repayment of loans](https://en.wikipedia.org/wiki/Solidarity_lending).
 
 
 ### What we built?
-We propose a simple model, where villagers all across India can pool their resources and receive interest-free microloans from the network. Blockchain technology enables micro-transactions (which allows for a greater inclusion for poverty-stricken individuals), automatic bookkeeping (no delay or pathy maintenance of ledgers) in a transparent (all transactions are open) manner. We remove the need for a central managing authority by using a smart contract. By needing consent from previous members to enter the network and making them accountable for him, we introduce peer pressure into the network. This lowers chances of non-repayment of loans (https://en.wikipedia.org/wiki/Solidarity_lending).
+We propose a simple model, where villagers all across India can pool their resources and receive *interest-free microloans* from the network. Blockchain technology enables micro-transactions (which allows for a greater inclusion for poverty-stricken individuals), automatic bookkeeping (no delay or pathy maintenance of ledgers on-chain) in a transparent (all chain transactions are open) manner. We remove the need for a managing authority for the group (decentralized smart contract). By needing consent from previous members to enter the network and making them accountable for him, we introduce peer pressure into the network. This lowers chances of non-repayment of loans.
 
 Using these elements, we can create an Aadhar-linked digital pan-Indian SHG network. In this network, MAXIMUM POSSIBLE microloan requests are fully funded with 0% interest (least request satisfied first) and the reserve wealth is re-distributed into the system. People can exit the network by requesting their deposited money, which they’ll receive in the next bidding when the loans are repayed.
 
@@ -29,9 +24,9 @@ Every 3 months, all loan-requests in the network are collected and the maximum p
 Every person who receives a loan has 3 months (until next bidding) to pay back his loan. Failure to do so will mean 4 people accountable for that person will have to bear the loan.
 
 #### Three steps to zero-interest loans:
-Get validated
-Deposit money
-Request microloan
+1. Get validated
+2. Deposit money
+3. Request microloan
 
 #### Peer Pressure on the blockchain
 Solidarity lending (peer pressure and mutual accountability to repaying loans) is an building block of rural microfinance. But in a pan-India digital network, this peer-pressure would be minimised. We achieve peer-pressure on a peer-to-peer network by using a novel innovative accountability solution, as described below.
@@ -75,7 +70,6 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 5. Remix IDE
 6. Web3.js
 7. Aadhar_validator.js
-
 
 
 Steps to compile in Truffle
