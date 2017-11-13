@@ -1,7 +1,7 @@
 # Proffer Network Hackathon
 This repository contains the source code for the rural microfinance project and the corresponding web interface.
-## What's going on here?
-blockchains aren't just a way of checking validity of transactions in distributed way, they're also novel methods of organising societies.
+## 0xSHG (Zero interest loans for rural microfinance)
+
 Rural microfinance problems aren't just financial, but also.
 
 
@@ -42,6 +42,7 @@ A new member on the network can only be added once his Aadhar identity been phys
 
 
 > How App works?
+
 | Command | Description |
 | --- | --- |
 | git status | List all new or modified files |
