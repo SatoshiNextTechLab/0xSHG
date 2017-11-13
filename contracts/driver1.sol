@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.6;
 
 contract driver {
 
@@ -72,24 +72,20 @@ contract driver {
 
     if(count==1)
     {
-      var1=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,0,0,0);
+      link[_req_member]=member(now,count,_req_member,msg.sender,0,0,0);
     }
     else if (count==2)
     {
-      var2=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,0,0);
+      link[_req_member].ref_2=msg.sender;
     }
     else if (count==3)
     {
-      var3=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,var3,0);
+        link[_req_member].ref_3=msg.sender;
     }
 
     else if (count==4)
     {
-      var4=msg.sender;
-      link[_req_member]=member(now,count,_req_member,var1,var2,var3,var4);
+      link[_req_member].ref_4=msg.sender;
     }
 
     count++;
@@ -110,7 +106,9 @@ contract driver {
 
   }
 
-  function pool(uint __amount) payable {
+//No constantto force user to deposit_to_pool for 6 months
+
+  function deposit_to_pool(uint __amount) payable {
 
     this.transfer(__amount);
     SomeoneAddedMoneyToThePool(msg.sender,__amount);
@@ -186,7 +184,7 @@ contract driver {
 
   uint counter_sum=1;
 
-  function assign_loan_amount_from_pool() constant returns (uint){
+  function assign_loan_amount_from_pool() returns (uint){
 
     sum = 0;
 
@@ -209,7 +207,7 @@ contract driver {
       return(link[ad1].addtime);
   }
 
-  function displayAllowedForLoan() constant returns(address[]){
+  function displayAllowedForLoan() payable returns(address[]){
 
     uint length = amounts.length;
     address[] memory addr = new address[](length);
@@ -227,7 +225,7 @@ contract driver {
 
   modifier least_amount_loan() {
 
-    if(sum < (this.balance)/4){
+    if(sum <= (this.balance)/4){
       throw;
     }
     else{
@@ -236,7 +234,7 @@ contract driver {
 
   }
 
-  function pay_loan() least_amount_loan() {
+  function pay_loan() payable least_amount_loan()  {
 
     for(uint w=0; w < counter_sum; w++ ){
 
@@ -248,9 +246,7 @@ contract driver {
 
  function getcurrtime() constant returns(uint)
   {
-
-      currtime=now;
-      return currtime;
+      return now;
   }
 
   function () payable{
