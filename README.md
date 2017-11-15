@@ -52,7 +52,7 @@ Solidarity lending (peer pressure and mutual accountability to repaying loans) i
 A new member on the network can only be added once his Aadhar identity been physically **validated by 4 pre-existing nodes on the network**. If the person defaults, the four people responsibility for him are required to either make him pay or split his debt. This roots the digital network in physical space, and simulates the same social pressure necessary for solidarity lending groups.
 
 ### Zero-Interest loans
-This is made possible by removing traditional banks from the equation. The group pools money internally and acts as a seed-funding co-operative, every three months. The main benefactors of this scheme are women, since SHG members have been found to be women.
+This is made possible by removing traditional banks from the equation. The group pools money internally and acts as a seed-funding co-operative, every three months.
 
 
 ## Architecture and Tech-stack
