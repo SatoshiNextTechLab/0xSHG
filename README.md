@@ -44,7 +44,7 @@ Using these elements, __**we can create an Aadhar-linked digital pan-Indian capi
 | Certain groups (women, dalits) not allowed into groups | Anonymity on the network ensures equality for all|
 | Need for centralized organisational leadership | Auto-governance by solidity smart contract |                                         | Risk of non-repayment of loans is high | Risk is mitigated by introducing peer-pressure on the blockchain (main innovation) |
 | Possibility of corruption inside group | All transactions are open and transparent |
-| [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | Intuitive web-interface for all transactions |
+| [Rural people find bank braches forbidding](https://thewire.in/171614/microfinance-bandhan-public-sector-banks/) | Intuitive single-page web-interface for all transactions |
 
 
 #### Peer Pressure on the blockchain (main innovation)
