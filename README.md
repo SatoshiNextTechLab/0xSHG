@@ -30,7 +30,7 @@ This allows villagers all across India to pool their resources and receive **int
 ### Protocol
 1. Every 3 months, all loan-requests in the network are collected and the maximum possible loan-requests are fulfilled.
 2. Every person who receives a loan, has 3 months to pay back his loan. 
-3. Failure to do so will mean 4 members accountable for that person (shown in video) will bear the loan, thus creating an incentive for the four members to keep the person accountable.
+3. Failure to do so will mean 4 members accountable for that person (shown in video) will either make him pay or split the debt, thus creating an incentive for the four members to keep the person accountable.
 
 
 <img src="https://raw.githubusercontent.com/jangidkrishna/0-loan_dapp/master/gui.png">
