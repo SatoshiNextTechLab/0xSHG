@@ -1,9 +1,8 @@
-# Proffer Network Hackathon
-This repository contains the source code for the rural microfinance project and the corresponding web interface, built for the Proffer Network Hackathon
+# This project won the Accel Prize and 1.5K USD at the Proffer Blockchain Hackathon
+Competing against teams from MIT, Cambridge, IISc, and IITs. Read about the winners [here](https://blog.proffer.network/proffer-hackathon-winners-2017-1adb2078a691).
 
-1. Link to video: https://www.youtube.com/watch?v=55RoBoMfOVo&feature=youtu.be<br>
+1. [Link to demo-video:] https://www.youtube.com/watch?v=55RoBoMfOVo&feature=youtu.be<br>
 2. [Link to contract deployed on Ropsten testnet](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62) <br>
-3. Contract address: 0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef
 
 ## 0xSHG (Zero interest loans for rural microfinance)
 Microfinance institutions are essential to economic sustenance of rural finance and small businesses. Initiatives like Self Help Groups (SHGs) have been transformational to [changing lives of rural populations (primarily women)](http://www.iosrjournals.org/iosr-jhss/papers/Vol7-issue1/I0714248.pdf?id=5966) depend on the fact that when villagers pool money, mutual accountability & peer pressure reduces risk of non-repayment of loans, get loans from banks with flat interest rates.
