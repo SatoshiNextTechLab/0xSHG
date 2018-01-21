@@ -3,7 +3,7 @@ Competing against teams from MIT, Cambridge, IISc, and IITs. Read about the winn
 
 1. [Link to demo-video](https://www.youtube.com/watch?v=55RoBoMfOVo&feature=youtu.be)<br>
 2. [Link to contract deployed on Ropsten testnet](https://ropsten.etherscan.io/tx/0xb4d20f9acb407187b71da9c6e2dd64a5f42f4fd81e1f780f06e4c7b8ce974f62) <br>
-
+3. [Link to demo 
 ## 0xSHG (Zero interest loans for rural microfinance)
 Microfinance institutions are essential to economic sustenance of rural finance and small businesses. Initiatives like Self Help Groups (SHGs) have been transformational to [changing lives of rural populations (primarily women)](http://www.iosrjournals.org/iosr-jhss/papers/Vol7-issue1/I0714248.pdf?id=5966) depend on the fact that when villagers pool money, mutual accountability & peer pressure reduces risk of non-repayment of loans, get loans from banks with flat interest rates.
 
@@ -56,7 +56,7 @@ This is made possible by removing traditional banks from the equation. The group
 
 ## Architecture and Tech-stack
 
-![System Architecture](https://raw.githubusercontent.com/jangidkrishna/0xSHG/master/architecture.jpg)
+![System Architecture](https://drive.google.com/open?id=1IMBdmHFKWsDndAaHbwLo9k681Radmgf7)
 
 
 ### Architecture Modules
