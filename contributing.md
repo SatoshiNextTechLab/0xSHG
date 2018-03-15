@@ -1,10 +1,10 @@
 ## Step 1: Understand blockchains
 
-###[Intro to the blockchains](https://youtu.be/bBC-nXj3Ng4)
+### [Intro to the blockchains](https://youtu.be/bBC-nXj3Ng4)
 
-###[Intro to solidity development](https://cryptozombies.io)
+### [Intro to solidity development](https://cryptozombies.io)
 
-###[Developing your first decenteralized app](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)
+### [Developing your first decenteralized app](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)
 
 
 ## Step 2: Get in touch
