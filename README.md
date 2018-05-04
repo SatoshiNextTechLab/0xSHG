@@ -82,7 +82,7 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 
 
 ##### Steps to compile in Truffle
-1. git clone https://github.com/jangidkrishna/0xSHG.git
+1. git clone https://github.com/SatoshiNextTechLab/0xSHG/
 2. truffle compile
 3. truffle migrate
 4. truffle console
@@ -90,10 +90,11 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 
 
 ##### Steps to compile GUI
-1. clone repo https://github.com/jangidkrishna/0xSHG.git
+1. clone repo https://github.com/SatoshiNextTechLab/0xSHG/
 2. cd into 0xSHG-master/GUI
 2. npm install .
-3. gulp serve
+3. bower install
+4. gulp serve
 
 
 ## Who does it benefit
@@ -110,3 +111,9 @@ Everyone in a rural setting who requires a loan but is unable to get one due to 
 
 
 ## Built by undergraduates at [Next Tech Lab, SRM University](http://nextech.io/index2.html)
+
+### The Team
+1. Arjun Bahuguna - Ideator/Documentation
+2. Krishna Jangid - Solidity Developer
+3. Souradeep Das - Solidity Developer
+4. Projjal - Front-End/Web3 Integration
