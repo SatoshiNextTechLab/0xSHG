@@ -71,7 +71,7 @@ function AddInit() {
 function aadhar2(){  
        preFunc();
        param1 = document.getElementById('Uaadr').value;
-  	   param2 = document.getElementById('Uaadh').value;
+  	param2 = document.getElementById('Uaadh').value;
        instance.add_Member.sendTransaction(param1,param2,txnObject,function(error, result)  {
        console.log('RECVED>>',error,result);   
             if(error){
