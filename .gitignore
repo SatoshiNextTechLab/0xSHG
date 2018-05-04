@@ -1,0 +1,5 @@
+.publish
+.tmp
+.vscode
+bower_components
+node_modules
