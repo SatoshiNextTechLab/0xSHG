@@ -40,12 +40,12 @@ function validate(array) {
 
 // converts string or number to an array and inverts it
 function invArray(array) {
-  if (Object.prototype.toString.call(array) === "[object Number]") {
+  if (Object.prototype.toString.call(array) === '[object Number]') {
     array = String(array);
   }
 
-  if (Object.prototype.toString.call(array) === "[object String]") {
-    array = array.split("").map(Number);
+  if (Object.prototype.toString.call(array) === '[object String]') {
+    array = array.split('').map(Number);
   }
   return array.reverse();
 }

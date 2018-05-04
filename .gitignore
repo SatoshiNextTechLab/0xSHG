@@ -1,0 +1,5 @@
+GUI/.publish
+GUI/.tmp
+GUI/.vscode
+GUI/bower_components
+GUI/node_modules
