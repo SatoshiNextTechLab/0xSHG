@@ -96,6 +96,12 @@ All loan request are sorted in increasing order of loan-request amount. Every th
 3. bower install
 4. gulp serve
 
+##### Steps to interact and test quickly on Remix with MetaMask
+1. go to https://remix.ethereum.org/
+2. Ensure MetaMask is setup and connected to Ropsten Network
+3. load the SmartContract at https://github.com/SatoshiNextTechLab/0xSHG/blob/master/contracts/driver1.sol
+4. Compile the contract, move to tab run.
+5. In load contract address enter `0x60a5a1971d1c66D754C6Fbfac17DD1EBe6BAdcef`.Hit At Address button.
 
 ## Who does it benefit
 Everyone in a rural setting who requires a loan but is unable to get one due to low income and high credit-liability score, [especially rural women](https://www.youthkiawaaz.com/2017/05/self-help-groups-an-anecdote-of-women-empowerment-in-india/). Our solution provides  an alternative, where a person can take zero-interest loans, without any collateral, while the network ensures the person is compelled (peer pressure on-chain) to return the amount.
@@ -117,3 +123,4 @@ Everyone in a rural setting who requires a loan but is unable to get one due to 
 2. Krishna Jangid - Solidity Developer
 3. Souradeep Das - Solidity Developer
 4. Projjal Gupta - Front-End/Web3 Integration
+5. Yadhukrishna S Pai - Solidity Developer
